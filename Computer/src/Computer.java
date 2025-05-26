@@ -6,11 +6,10 @@ public class Computer {
     private boolean encendida;
 
 
-    // Constructor
     public Computer (String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
-        this.encendida = false; // Por defecto está apagada
+        this.encendida = false;
     }
 
 
@@ -34,7 +33,7 @@ public class Computer {
     }
 
 
-    // Getters
+    // Los Getters a usar
     public String getMarca() {
         return marca;
     }
@@ -59,8 +58,8 @@ public class Computer {
     public static void main (String[] args) {
         Computer pc = new Computer("Lenovo", "IdeaPad 3");
 
-        pc.encender(); // Debería mostrar "Encendiendo..."
-        pc.encender(); // No debería mostrar nada
-        pc.apagar();   // Debería mostrar "Apagando..."
+        pc.encender();
+        pc.encender();
+        pc.apagar();  
     }
 }
