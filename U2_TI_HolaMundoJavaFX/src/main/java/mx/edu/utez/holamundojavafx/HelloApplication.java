@@ -1,6 +1,7 @@
 package mx.edu.utez.holamundojavafx;
 
 import javafx.application.Application;
+<<<<<<< HEAD
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
+=======
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+>>>>>>> 96be9223aed9bae886a5c1afa4be876e064a50b9
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -21,6 +28,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+<<<<<<< HEAD
        Label lblNombre = new Label("Nombre");
         TextField tfNombre = new TextField();
         Label lblComentario = new Label("Comentario");
@@ -61,6 +69,11 @@ public class HelloApplication extends Application {
        //root.setPadding(new Insets(20));
        //root.setAlignment(Pos.CENTER);
         Scene scene = new Scene(form, 200, 200);
+=======
+       Label myLabel = new Label("Hola 3C");
+       StackPane root = new StackPane(myLabel);
+       Scene scene = new Scene(root, 200, 200);
+>>>>>>> 96be9223aed9bae886a5c1afa4be876e064a50b9
 
         stage.setTitle("Mi primer app en java FX");
         Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Icon/star_1222385.png")));
